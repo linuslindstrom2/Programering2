@@ -35,7 +35,7 @@ namespace HelloNiklas
             }
             else if (alive == "no")
             {
-                Console.WriteLine("Dam, sorry man...");
+                Console.WriteLine("Damn, sorry man...");
             }
         }
     }
