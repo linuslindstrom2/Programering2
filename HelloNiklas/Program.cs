@@ -1,4 +1,5 @@
 ﻿    using System;
+using System.Linq.Expressions;
 
 namespace HelloNiklas
 {
@@ -6,6 +7,28 @@ namespace HelloNiklas
     {
         static void Main(string[] args)
         {
+
+            static void Gender()
+            {
+                Console.WriteLine("Are you a boy or girl?");
+
+                var gender = Console.ReadLine();
+
+                switch (gender)
+                {
+                    case "boy":
+                        Console.WriteLine("Hey boy");
+
+                        break;
+                    case "girl":
+                        Console.WriteLine("Hey girl");
+
+                        break;
+                    default:
+                        
+                        break;
+                }
+            }
             Console.WriteLine("Hello Niklas!");
 
             Console.WriteLine("What's your name?");
@@ -37,6 +60,8 @@ namespace HelloNiklas
             {
                 Console.WriteLine("Damn, sorry man...");
             }
+
+            
         }
     }
 }
