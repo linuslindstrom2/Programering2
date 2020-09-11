@@ -1,4 +1,5 @@
 ﻿    using System;
+using System.Drawing;
 using System.Linq.Expressions;
 
 namespace HelloNiklas
@@ -7,29 +8,10 @@ namespace HelloNiklas
     {
         static void Main(string[] args)
         {
-
-            static void Gender()
-            {
-                Console.WriteLine("Are you a boy or girl?");
-
-                var gender = Console.ReadLine();
-
-                switch (gender)
-                {
-                    case "boy":
-                        Console.WriteLine("Hey boy");
-
-                        break;
-                    case "girl":
-                        Console.WriteLine("Hey girl");
-
-                        break;
-                    default:
-                        
-                        break;
-                }
-            }
+            
             Console.WriteLine("Hello Niklas!");
+
+            Gender();
 
             Console.WriteLine("What's your name?");
             string name = Console.ReadLine();
@@ -52,16 +34,48 @@ namespace HelloNiklas
                 alive = Console.ReadLine();
             }
 
-            if (alive == "yes")
+            if (alive == "yes" || alive == "Yes")
             {
                 Console.WriteLine("Happy to hear man.");
             }
-            else if (alive == "no")
+            else if (alive == "no" || alive == "No")
             {
                 Console.WriteLine("Damn, sorry man...");
             }
 
             
         }
+
+        static void Gender()
+        {
+            Console.WriteLine("Are you a boy or girl?");
+
+            var gender = Console.ReadLine();
+
+            switch (gender)
+            {
+                case "boy":
+                    Console.WriteLine("Hey boy");
+
+                    break;
+                case "Boy":
+                    Console.WriteLine("Hey boy");
+
+                    break;
+                case "girl":
+                    Console.WriteLine("Hey girl");
+
+                    break;
+                case "Girl":
+                    Console.WriteLine("Hey girl");
+
+                    break;
+                default:
+
+                    break;
+            }
+        }
+
+        
     }
-}
+} 
