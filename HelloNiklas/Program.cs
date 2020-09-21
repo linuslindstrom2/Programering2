@@ -36,14 +36,12 @@ namespace HelloNiklas
 
             if (alive == "yes" || alive == "Yes")
             {
-                Console.WriteLine("Happy to hear man.");
+                Console.WriteLine("Happy to hear.");
             }
             else if (alive == "no" || alive == "No")
             {
-                Console.WriteLine("Damn, sorry man...");
+                Console.WriteLine("Damn, sorry...");
             }
-
-            
         }
 
         static void Gender()
