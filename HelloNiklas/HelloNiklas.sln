@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloNiklas", "HelloNiklas.csproj", "{5F0A0E16-CB55-4747-9299-B1A64141387A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloNiklas", "HelloNiklas.csproj", "{5F0A0E16-CB55-4747-9299-B1A64141387A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metoder", "..\Metoder\Metoder.csproj", "{47C2B7DB-4411-41F8-A5A4-A361D17AE617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listor och Arrayer", "..\Listor och Arrayer\Listor och Arrayer.csproj", "{06AC5616-EB60-4528-9EF7-6773398AC1A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5F0A0E16-CB55-4747-9299-B1A64141387A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F0A0E16-CB55-4747-9299-B1A64141387A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F0A0E16-CB55-4747-9299-B1A64141387A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C2B7DB-4411-41F8-A5A4-A361D17AE617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C2B7DB-4411-41F8-A5A4-A361D17AE617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C2B7DB-4411-41F8-A5A4-A361D17AE617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C2B7DB-4411-41F8-A5A4-A361D17AE617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06AC5616-EB60-4528-9EF7-6773398AC1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AC5616-EB60-4528-9EF7-6773398AC1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AC5616-EB60-4528-9EF7-6773398AC1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AC5616-EB60-4528-9EF7-6773398AC1A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
