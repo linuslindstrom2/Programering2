@@ -6,7 +6,17 @@ namespace Genomgång
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Animal smulan = new Animal();
+            smulan._name = "Smulan";
+            smulan._species = "Dog";
+            smulan._color = "Green";
+
+            Person niklas = new Person("Niklas", 33, smulan);
+
+            niklas.Eat();
+            niklas.Sleep();
+
+            niklas.ActivatePet();
         }
     }
 }
