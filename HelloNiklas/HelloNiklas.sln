@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metoder", "..\Metoder\Metod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listor och Arrayer", "..\Listor och Arrayer\Listor och Arrayer.csproj", "{06AC5616-EB60-4528-9EF7-6773398AC1A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3MetoderUppgift", "..\3MetoderUppgift\3MetoderUppgift.csproj", "{832FED76-752B-4FCE-8319-88E5CB92759C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{06AC5616-EB60-4528-9EF7-6773398AC1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06AC5616-EB60-4528-9EF7-6773398AC1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06AC5616-EB60-4528-9EF7-6773398AC1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832FED76-752B-4FCE-8319-88E5CB92759C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832FED76-752B-4FCE-8319-88E5CB92759C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832FED76-752B-4FCE-8319-88E5CB92759C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832FED76-752B-4FCE-8319-88E5CB92759C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
