@@ -1,6 +1,4 @@
-﻿
-
-namespace Genomgång
+﻿namespace Genomgång
 {
     class Person
     {
@@ -32,6 +30,3 @@ namespace Genomgång
         }
     }
 }
-
-
-
