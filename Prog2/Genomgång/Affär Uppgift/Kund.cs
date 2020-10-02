@@ -1,18 +1,21 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace Affär_Uppgift
 {
     class Kund
     {
-        string _name;
+        public string _name;
 
         int _age;
 
-        public Kund(string name, int age)
+        public Kund(string name)
         {
             _name = name;
-            _age = age;
+            
         }
+
+       
 
 
 

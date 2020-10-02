@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Affär_Uppgift
 {
-    class Class2
+    class Product
     {
+
     }
+
+
 }
