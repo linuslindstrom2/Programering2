@@ -8,7 +8,7 @@ namespace Affär_Uppgift
     {
 
 
-        public List<Product> produkter = new List<Product>();
+        public List<Product> kundvagn = new List<Product>();
 
         public string _name;
 
