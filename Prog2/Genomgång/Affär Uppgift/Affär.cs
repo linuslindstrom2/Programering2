@@ -46,10 +46,12 @@ namespace Affär_Uppgift
                             o = i + 1;
                             Console.WriteLine(" (" + o + ") - " + _kund[i]._name);
                         }
+                        
                         do
                         {
                             kundval = TryGetNumber();
                         } while (kundval <= _kund.Count);
+                        
                         Console.Clear(); 
 
                         int cont = 1;
