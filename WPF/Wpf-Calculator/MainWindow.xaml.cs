@@ -37,7 +37,7 @@ namespace Wpf_Calculator
 
         }
 
-        private void C_Click(object sender, RoutedEvent e)
+        private void C_Click(object sender, RoutedEventArgs e)
         {
             if (e.Source is Button button)
             {
@@ -48,69 +48,43 @@ namespace Wpf_Calculator
 
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
-
-
-            List<int> container = new List<int>();
+               
             
-
-
+            
             if (e.Source is Button button)
             {
-                string nummer = "";
 
-                foreach (var item in InOutField.Text)
-                {
-                    if (item != '+' || item != '-' || item != '*' || item != '/' || item != '=')
-                    {
-                        nummer += item;
-                    }
-                    else
-                    {
-                        container.Add(Convert.ToInt32(nummer));
+                String textruta = InOutField.Text;
 
-                        if (item == '+')
-                        {
-                            container.Add('+');
-                        }
-                        else if (item == '-')
-                        {
-                            container.Add('-');
-                        }
-                        else if (item == '*')
-                        {
-                            container.Add('*');
-                        }
-                        else if (item == '/')
-                        {
-                            container.Add('/');
-                        }
-                        else if (item == '=')
-                        {
-                            container.Add('=');
-                        }
-                    }
-                }
 
-                double sum = 0;
+                if (InOutField.Text.Contains('+'))
+	            {
+                    String[] tal = textruta.Split('+');
 
-                if (container[1] == '+')
-                {
-                    sum = container[0] + container[2];
+                    InOutField.Text = String.Empty;
+                    InOutField.Text += Convert.ToDouble(tal[0]) + Convert.ToDouble(tal[1]);
                 }
-                else if (container[1] == '-')
-                {
-                    sum = container[0] - container[2];
-                }
-                else if (container[1] == '*')
-                {
-                    sum = container[0] * container[2];
-                }
-                else if (container[1] == '/')
-                {
-                    sum = container[0] / container[2];
-                }
+                else if (InOutField.Text.Contains('-'))
+	            {
+                     String[] tal = textruta.Split('-');
 
-                InOutField.Text += sum;
+                    InOutField.Text = String.Empty;
+                    InOutField.Text += Convert.ToDouble(tal[0]) - Convert.ToDouble(tal[1]);
+                }
+                else if (InOutField.Text.Contains('*'))
+	            {
+                     String[] tal = textruta.Split('*');
+
+                    InOutField.Text = String.Empty;
+                    InOutField.Text += Convert.ToDouble(tal[0]) * Convert.ToDouble(tal[1]);
+                }
+                else if (InOutField.Text.Contains('/'))
+	            {
+                     String[] tal = textruta.Split('/');
+
+                    InOutField.Text = String.Empty;
+                    InOutField.Text += Convert.ToDouble(tal[0]) / Convert.ToDouble(tal[1]);
+                }
 
             }
         }
