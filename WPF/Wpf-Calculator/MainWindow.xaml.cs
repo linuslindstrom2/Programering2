@@ -37,8 +37,18 @@ namespace Wpf_Calculator
 
         }
 
+        private void C_Click(object sender, RoutedEvent e)
+        {
+            if (e.Source is Button button)
+            {
+                InOutField.Text = String.Empty;
+
+            }
+        }
+
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
+
 
             List<int> container = new List<int>();
             
