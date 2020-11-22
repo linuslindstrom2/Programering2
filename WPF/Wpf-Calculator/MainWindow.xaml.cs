@@ -27,14 +27,10 @@ namespace Wpf_Calculator
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             if (e.Source is Button button)
             {
-
                 InOutField.Text += button.Content;
-
             }
-
         }
 
         private void C_Click(object sender, RoutedEventArgs e)
@@ -42,20 +38,14 @@ namespace Wpf_Calculator
             if (e.Source is Button button)
             {
                 InOutField.Text = String.Empty;
-
             }
         }
 
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
-               
-            
-            
             if (e.Source is Button button)
             {
-
                 String textruta = InOutField.Text;
-
 
                 if (InOutField.Text.Contains('+'))
 	            {
@@ -66,29 +56,26 @@ namespace Wpf_Calculator
                 }
                 else if (InOutField.Text.Contains('-'))
 	            {
-                     String[] tal = textruta.Split('-');
+                    String[] tal = textruta.Split('-');
 
                     InOutField.Text = String.Empty;
                     InOutField.Text += Convert.ToDouble(tal[0]) - Convert.ToDouble(tal[1]);
                 }
                 else if (InOutField.Text.Contains('*'))
 	            {
-                     String[] tal = textruta.Split('*');
+                    String[] tal = textruta.Split('*');
 
                     InOutField.Text = String.Empty;
                     InOutField.Text += Convert.ToDouble(tal[0]) * Convert.ToDouble(tal[1]);
                 }
                 else if (InOutField.Text.Contains('/'))
 	            {
-                     String[] tal = textruta.Split('/');
+                    String[] tal = textruta.Split('/');
 
                     InOutField.Text = String.Empty;
                     InOutField.Text += Convert.ToDouble(tal[0]) / Convert.ToDouble(tal[1]);
                 }
-
             }
         }
-
-
     }
 }
