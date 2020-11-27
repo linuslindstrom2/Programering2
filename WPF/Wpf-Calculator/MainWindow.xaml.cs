@@ -43,39 +43,83 @@ namespace Wpf_Calculator
 
         private void Enter_Click(object sender, RoutedEventArgs e)
         {
+
+            
             if (e.Source is Button button)
             {
+               
+                
                 String textruta = InOutField.Text;
 
-                if (InOutField.Text.Contains('+'))
-	            {
-                    String[] tal = textruta.Split('+');
+                if (textruta.Contains('-') && textruta.Contains('+') || textruta.Contains('*') || textruta.Contains('/'))
+                {
 
-                    InOutField.Text = String.Empty;
-                    InOutField.Text += Convert.ToDouble(tal[0]) + Convert.ToDouble(tal[1]);
-                }
-                else if (InOutField.Text.Contains('-'))
-	            {
-                    String[] tal = textruta.Split('-');
+                    if (InOutField.Text.Contains('+'))
+                    {
+                        String[] tal = textruta.Split('+');
 
-                    InOutField.Text = String.Empty;
-                    InOutField.Text += Convert.ToDouble(tal[0]) - Convert.ToDouble(tal[1]);
-                }
-                else if (InOutField.Text.Contains('*'))
-	            {
-                    String[] tal = textruta.Split('*');
+                        InOutField.Text = String.Empty;
+                        InOutField.Text += Convert.ToDouble(tal[0]) + Convert.ToDouble(tal[1]);
+                    }
+                    else if (InOutField.Text.Contains('*'))
+                    {
+                        String[] tal = textruta.Split('*');
 
-                    InOutField.Text = String.Empty;
-                    InOutField.Text += Convert.ToDouble(tal[0]) * Convert.ToDouble(tal[1]);
-                }
-                else if (InOutField.Text.Contains('/'))
-	            {
-                    String[] tal = textruta.Split('/');
+                        InOutField.Text = String.Empty;
+                        InOutField.Text += Convert.ToDouble(tal[0]) * Convert.ToDouble(tal[1]);
+                    }
+                    else if (InOutField.Text.Contains('/'))
+                    {
+                        String[] tal = textruta.Split('/');
 
-                    InOutField.Text = String.Empty;
-                    InOutField.Text += Convert.ToDouble(tal[0]) / Convert.ToDouble(tal[1]);
+                        InOutField.Text = String.Empty;
+                        InOutField.Text += Convert.ToDouble(tal[0]) / Convert.ToDouble(tal[1]);
+                    }
                 }
+                else if (textruta.Contains('-') ) 
+                {
+
+                }
+                
+                starts with
+
+                börjar på + * /, error
+
             }
         }
     }
+}
+
+
+if (InOutField.Text.Contains('+'))
+{
+    String[] tal = textruta.Split('+');
+
+    InOutField.Text = String.Empty;
+    InOutField.Text += Convert.ToDouble(tal[0]) + Convert.ToDouble(tal[1]);
+}
+else if (InOutField.Text.Contains('-'))
+{
+    String[] tal = textruta.Split('-');
+
+    InOutField.Text = String.Empty;
+    InOutField.Text += Convert.ToDouble(tal[0]) - Convert.ToDouble(tal[1]);
+}
+else if (InOutField.Text.Contains('*'))
+{
+    String[] tal = textruta.Split('*');
+
+    InOutField.Text = String.Empty;
+    InOutField.Text += Convert.ToDouble(tal[0]) * Convert.ToDouble(tal[1]);
+}
+else if (InOutField.Text.Contains('/'))
+{
+    String[] tal = textruta.Split('/');
+
+    InOutField.Text = String.Empty;
+    InOutField.Text += Convert.ToDouble(tal[0]) / Convert.ToDouble(tal[1]);
+}
+else
+{
+    InOutField.Text += "Error";
 }
