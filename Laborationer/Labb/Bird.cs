@@ -13,7 +13,7 @@ namespace Labb
 
         public override void Eat()
         {
-            Console.WriteLine("Bird is chirping!");
+            Console.WriteLine("Bird is peck-peck-pecking away!");
         }
 
         public override void Sleep()
@@ -23,7 +23,7 @@ namespace Labb
 
         public override void Speak()
         {
-            Console.WriteLine("Bird is peck-peck-pecking away!");
+            Console.WriteLine("Bird is chirping!");
         }
     }
 }

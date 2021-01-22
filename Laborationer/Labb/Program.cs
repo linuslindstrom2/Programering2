@@ -6,6 +6,8 @@ namespace Labb
     {
         static void Main(string[] args)
         {
+            Owner _owner = new Owner();
+
             Animal[] animals = {
                 new Dog("Black"),
                 new Hedgehog("Pink"),
@@ -17,20 +19,22 @@ namespace Labb
 
             foreach (var animal in animals)
             {
+                animal.Eat();
+
                 if (animal is Dog dog)
                 {
-                    dog.TransferOwnership("Niklas"); 
+                    _owner.TransferOwnership("Niklas"); 
                 }
-
-                animal.Eat();
-                animal.Sleep();
+                
                 animal.Speak();
+                animal.Sleep();
                 animal._color = "Grey";
                 Console.WriteLine(animal.GetType().Name + " is " + animal._color);
                 Console.WriteLine();
 
                 Console.WriteLine("###############");
                 Console.WriteLine();
+
             }
         }
     }

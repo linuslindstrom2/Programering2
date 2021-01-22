@@ -4,18 +4,12 @@ using System.Text;
 
 namespace Labb
 {
-    class Dog : Animal , TransferOwnership
+    class Dog : Animal 
     {
-
 
         public Dog(string color) : base(color)
         {
 
-        }
-
-        public override void Eat()
-        {
-            Console.WriteLine("Dog is eating. " + _owner + " is happy!");
         }
 
         public override void Sleep()
@@ -27,7 +21,11 @@ namespace Labb
         {
             Console.WriteLine("Dog is barking!");
         }
-    }
 
+        public override void Eat()
+        {
+            Console.Write("Dog is eating. ");
+        }
+    }
 }
 

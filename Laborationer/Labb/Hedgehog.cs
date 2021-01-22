@@ -13,7 +13,7 @@ namespace Labb
 
         public override void Eat()
         {
-            Console.WriteLine("Hedgehog is squeeking!");
+            Console.WriteLine("Hedgehog is omnomnoming!");
         }
 
         public override void Sleep()
@@ -23,7 +23,7 @@ namespace Labb
 
         public override void Speak()
         {
-            Console.WriteLine("Hedgehog is omnomnoming!");
+            Console.WriteLine("Hedgehog is squeeking!");
         }
     }
 }
