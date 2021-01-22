@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Labb
 {
-    class TransformOwnership
+    public class TransferOwnership
     {
+        string _owner;
+
+        public void TransferOwnership(string owner)
+        {
+            _owner = owner;
+        }
     }
 }
