@@ -16,17 +16,16 @@ namespace Komposition
             goodboi.Color = "Grey";
             goodboi.NumberOFLimbs = 4;
 
-            var bird = new Bird();
-            bird.Color = "Red and Green";
-            bird.NumberOFLimbs = 4;
+            var birb = new Bird();
+            birb.Color = "Red and Green";
+            birb.NumberOFLimbs = 4;
 
             animals.Add(goodboi);
-            animals.Add(bird);
+            animals.Add(birb);
 
-            var fliers = new List<IFly>();
-            var movers = new List<IMove>();
-            var eaters = new List<IEat>();
-            var resters = new List<IRest>();
+            var birds = new List<IBird>();
+            var dogs = new List<IDog>();
+            
 
             foreach ( var animal in animals)
             {
@@ -35,23 +34,28 @@ namespace Komposition
 
                 if (animal is Dog dog)
                 {
-                    movers.Add(dog);
-                    eaters.Add(dog);
-                    resters.Add(dog);
+                    dogs.Add(dog);
                 }
                 else if (animal is Bird bird)
                 {
-                    movers.Add(bird);
-                    eaters.Add(bird);
-                    resters.Add(bird);
-                    fliers.Add(bird);
+                    birds.Add(bird);
                 }
             }
 
-            foreach (var flier in fliers)
+            foreach (var doggo in dogs)
             {
-
+                doggo.Eat();
+                doggo.Rest();
+                doggo.Move();
             }
+            foreach (var bird in birds)
+            {
+                bird.Eat();
+                bird.Rest();
+                bird.Fly();
+                bird.Move();
+            }
+
         }
     }
 }

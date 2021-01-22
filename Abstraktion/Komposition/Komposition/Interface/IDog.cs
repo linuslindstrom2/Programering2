@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Komposition.Interface
 {
-    interface IDog
+    interface IDog: IMove, IEat, IRest
     {
     }
 }

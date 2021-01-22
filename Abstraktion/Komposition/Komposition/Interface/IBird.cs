@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Komposition.Interface
 {
-    interface IBird
+    interface IBird : IMove, IEat, IRest, IFly
     {
     }
 }

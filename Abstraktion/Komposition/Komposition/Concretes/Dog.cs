@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Komposition.Concretes
 {
-    class Dog : Animal, IMove, IEat, IRest
+    class Dog : Animal, IDog
     {
         public void Eat()
         {
