@@ -6,7 +6,7 @@ namespace SubscriberPattern
 {
     class Subject : ISubject
     {
-        private List<Observer> observers = new List<Observer>();
+        private List<Observer> Members = new List<Observer>();
         private int _int;
 
         public int Inventory
@@ -27,17 +27,17 @@ namespace SubscriberPattern
 
         public void BecomeMember(Observer observer)
         {
-            observers.Add(observer);
+            Members.Add(observer);
         }
 
         public void RemoveMember(Observer observer)
         {
-            observers.Remove(observer);
+            Members.Remove(observer);
         }
 
         public void Notify()
         {
-            foreach (var observer in observers)
+            foreach (var observer in Members)
             {
                 observer.Update();
             }

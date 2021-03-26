@@ -22,6 +22,19 @@ namespace SubscriberPattern
             subject.Inventory++;
 
             Console.ReadLine();
+
+            int Cont = 1;
+            do
+            {
+                Console.WriteLine("what do you want to do?");
+                Console.WriteLine("(1) - Add new member");
+                Console.WriteLine("(2) - Remove a member"); 
+                Console.WriteLine("(3) - Add new product to the store");
+
+
+
+
+            } while (Cont == 1);
         }
     }
 }
