@@ -14,15 +14,28 @@ namespace LabbStrategyPattern
                 Console.WriteLine("(3) - Audi");
                 Console.WriteLine("(4) - Porsche");
 
-                var choice = Console.ReadLine();
-
-               
+                int choice = Convert.ToInt32(Console.ReadLine());
+                
                 String colourOfCar;
                 String colourRims;
 
+                switch (choice)
+                {
+                    case 1:
+                        break;
 
+                    case 2:
+                        break;
 
-                
+                    case 3:
+                        break;
+
+                    case 4:
+                        break;
+
+                    default:
+                        break;
+                }
             }
         }
     }
