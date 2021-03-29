@@ -6,7 +6,7 @@ namespace SubscriberPattern
 {
     class Subject : ISubject
     {
-        private List<Observer> Members = new List<Observer>();
+        public List<Observer> Members = new List<Observer>();
         private int _int;
 
         public int Inventory

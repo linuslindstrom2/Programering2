@@ -8,33 +8,67 @@ namespace SubscriberPattern
         {
             Subject subject = new Subject();
 
-            Observer observer1 = new Observer("Observer 1");
-            subject.BecomeMember(observer1);
-
-            Observer observer2 = new Observer("Observer 2");
-            subject.BecomeMember(observer2);
-
-            subject.Inventory++;
-
-            Observer observer3 = new Observer("Observer 3");
-            subject.BecomeMember(observer3);
-
-            subject.Inventory++;
-
-            Console.ReadLine();
 
             int Cont = 1;
             do
             {
+                
                 Console.WriteLine("what do you want to do?");
                 Console.WriteLine("(1) - Add new member");
                 Console.WriteLine("(2) - Remove a member"); 
                 Console.WriteLine("(3) - Add new product to the store");
+                int menyVal = Convert.ToInt32(Console.ReadLine());
+                Console.Clear();
 
+                switch (menyVal)
+                {
+                    case 1:
+                        AddWho();
+                        Console.Clear();
+                        break;
 
+                    case 2:
+                        RemoveWho();
+                        Console.Clear();
+                        break;
 
+                    case 3:
+                        subject.Inventory++;
+                        break;
 
+                    case 4:
+                        Cont = 0;
+                        break;
+
+                    default:
+                        break;
+                }
             } while (Cont == 1);
+
+            void AddWho()
+            {
+                Console.WriteLine("What is the member's name? ");
+                String memberName = Console.ReadLine();
+                Observer member = new Observer(memberName);
+                subject.BecomeMember(member);
+            }
+
+            void RemoveWho()
+            {
+                int nummer = 0;
+
+                foreach (var member in subject.Members)
+                {
+                    nummer++;
+                    Console.WriteLine("(" + nummer + ")" + member.ObserverName);
+                }
+
+                Console.WriteLine("Who do you want to remove?");
+                int removeWho = Convert.ToInt32(Console.ReadLine());
+
+                subject.RemoveMember(subject.Members[removeWho - 1]);
+            }
+
         }
     }
 }

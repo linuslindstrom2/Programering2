@@ -6,6 +6,6 @@ namespace SubscriberPattern
 {
     interface IObserver
     {
-        void Update();
+        public void Update();
     }
 }

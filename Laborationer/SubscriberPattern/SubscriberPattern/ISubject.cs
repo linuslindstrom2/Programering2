@@ -6,9 +6,9 @@ namespace SubscriberPattern
 {
     interface ISubject
     {
-        void BecomeMember(Observer observer);
-        void RemoveMember(Observer observer);
-        void Notify();
+        public void BecomeMember(Observer observer);
+        public void RemoveMember(Observer observer);
+        public void Notify();
 
     }
 }

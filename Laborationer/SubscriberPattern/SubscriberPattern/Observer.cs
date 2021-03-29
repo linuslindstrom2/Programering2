@@ -15,7 +15,7 @@ namespace SubscriberPattern
 
         public void Update()
         {
-            Console.WriteLine(ObserverName + ": A new product has arrived at the store");
+            Console.WriteLine(ObserverName + " A new product is availible in the store!");
         }
 
     }
